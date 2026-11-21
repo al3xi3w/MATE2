@@ -173,7 +173,8 @@
     ] });
 
   T.push({ id: 'dijkstra', unit: 'Grafos', title: 'Árbol expandido, árbol expandido mínimo y Dijkstra', src: 'Diapositivas DIJKSTRA',
-    html: `${def('Árbol expandido (generador / recubridor)', 'Sea $G=(V,E)$ no dirigido. $T_1=(V_1,E_1)$ es un <b>árbol expandido</b> si contiene <u>todos los vértices</u> de $G$ y <u>no tiene circuitos</u>.')}
+    html: `<figure class="video" id="video-dijkstra"><video controls preload="metadata" playsinline poster="Videos/dijkstra_poster.jpg" src="Videos/Algoritmo_de_Dijkstra_web.mp4">Tu navegador no puede reproducir el video.</video><figcaption>Video: Algoritmo de Dijkstra (7 min), con el ejemplo de clase de $a$ a $z$.</figcaption></figure>
+    ${def('Árbol expandido (generador / recubridor)', 'Sea $G=(V,E)$ no dirigido. $T_1=(V_1,E_1)$ es un <b>árbol expandido</b> si contiene <u>todos los vértices</u> de $G$ y <u>no tiene circuitos</u>.')}
     ${ex('Todos los árboles expandidos (clase)', `${svg(spanG, { width: 230, height: 150 })}El único circuito es $v_1v_2v_4$; para eliminarlo se quita <b>una</b> de sus 3 aristas ⇒ <b>3 árboles expandidos</b>:
       ${row(...[[2], [3], [4]].map(([k]) => svg(spanG, { width: 150, height: 110, hi: new Set([0, 1, 2, 3, 4, 5].filter((x) => x !== k)) })))}`)}
     ${def('Árbol expandido mínimo', 'Para un grafo conexo <b>pesado</b>: árbol expandido con el <b>menor peso total</b> posible comparado con los otros árboles expandidos.')}

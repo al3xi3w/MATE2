@@ -91,6 +91,9 @@ code { background: var(--panel-2); padding: .05rem .35rem; border-radius: 5px; f
 .fig figcaption { font-size: .85rem; color: var(--ink-3); margin-top: .2rem; }
 .figrow { display: flex; flex-wrap: wrap; gap: .5rem 1rem; justify-content: center; align-items: flex-end; }
 .figrow .fig { margin: .4rem 0; }
+.video { margin: 0 0 1.2rem; }
+.video video { display: block; width: 100%; max-width: 760px; margin: 0 auto; border-radius: 10px; background: #000; aspect-ratio: 16 / 9; }
+.video figcaption { text-align: center; font-size: .85rem; color: var(--ink-3); margin-top: .35rem; }
 .gsvg { display: block; margin: 0 auto; height: auto; }
 .gsvg .nlab, .ed-svg .nlab { font: 600 12px Inter, sans-serif; fill: var(--ink); }
 .gsvg .nnote { font: 600 11px Inter, sans-serif; fill: var(--accent); }
